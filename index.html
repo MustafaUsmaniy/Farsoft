@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARSOFT - ИТ Решения для Вашего Бизнеса</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .navbar {
+            z-index: 50;
+            background-color: #2d3748; /* Темный фон для navbar */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background-color: #1f2937; /* Темный фон для dropdown */
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 0.5rem;
+            z-index: 60;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Header Section -->
+    <header class="navbar py-4 fixed w-full top-0 left-0">
+        <nav class="container mx-auto flex justify-between items-center relative">
+            <div class="flex items-center">
+                <img src="logo.png" alt="Логотип FARSOFT" class="h-10 w-10">
+                <h1 class="ml-3 text-2xl font-bold">FARSOFT</h1>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-purple-400">Главная</a></li>
+                <li><a href="#services" class="hover:text-purple-400">Услуги</a></li>
+                <li><a href="#about" class="hover:text-purple-400">О нас</a></li>
+                <li><a href="#portfolio" class="hover:text-purple-400">Проекты</a></li>
+                <li><a href="#contact" class="hover:text-purple-400">Контакты</a></li>
+            </ul>
+            <!-- Language Dropdown -->
+            <div class="dropdown relative ml-6">
+                <button class="bg-gray-700 text-white py-2 px-4 rounded-lg focus:outline-none">
+                    Язык
+                </button>
+                <div class="dropdown-content mt-2">
+                    <a href="#" class="block px-4 py-2 text-gray-200 hover:bg-gray-600">Русский</a>
+                    <a href="#" class="block px-4 py-2 text-gray-200 hover:bg-gray-600">Ўзбекча</a>
+                    <a href="#" class="block px-4 py-2 text-gray-200 hover:bg-gray-600">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20"> <!-- Add padding top to ensure content is not hidden behind fixed navbar -->
+        <!-- Hero Section -->
+        <section id="home" class="bg-cover bg-center h-screen" style="background-image: url('hero-bg.jpg');">
+            <div class="container mx-auto h-full flex flex-col justify-center items-center text-center text-white">
+                <h2 class="text-5xl font-bold mb-4">Мы создаем ИТ решения для вашего бизнеса</h2>
+                <p class="text-xl mb-6">Инновационные, надежные и эффективные решения для современных компаний.</p>
+                <a href="#services" class="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-bold">Узнать больше</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 bg-gray-800">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6 text-purple-400">О FARSOFT</h2>
+                <p class="text-xl mb-12 text-gray-300">FARSOFT - ведущая ИТ компания, специализирующаяся на разработке программного обеспечения, ИТ-консалтинге и передовых технологиях. Наша миссия - предоставить надежные и инновационные решения, чтобы помочь бизнесу процветать в цифровом мире.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    <div class="p-6 bg-gray-700 rounded-lg shadow-md">
+                        <h3 class="text-3xl font-bold text-indigo-400">500+</h3>
+                        <p class="text-gray-400">Завершенных проектов</p>
+                    </div>
+                    <div class="p-6 bg-gray-700 rounded-lg shadow-md">
+                        <h3 class="text-3xl font-bold text-indigo-400">300+</h3>
+                        <p class="text-gray-400">Довольных клиентов</p>
+                    </div>
+                    <div class="p-6 bg-gray-700 rounded-lg shadow-md">
+                        <h3 class="text-3xl font-bold text-indigo-400">10+ лет</h3>
+                        <p class="text-gray-400">Опыт в индустрии</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-gray-900">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8 text-purple-400">Наши Услуги</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="p-6 bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
+                        <i class="fas fa-calculator text-4xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-400">1C Бухгалтерия</h3>
+                        <p class="text-gray-300">Индивидуальные решения для автоматизации бухгалтерского учета и отчетности.</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
+                        <i class="fas fa-laptop-code text-4xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-400">Веб-разработка</h3>
+                        <p class="text-gray-300">Адаптивные и современные сайты для оптимального пользовательского опыта.</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
+                        <i class="fas fa-mobile-alt text-4xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-400">Разработка мобильных приложений</h3>
+                        <p class="text-gray-300">Приложения для iOS и Android для расширения охвата вашего бизнеса.</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
+                        <i class="fas fa-cloud text-4xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-400">Облачные вычисления</h3>
+                        <p class="text-gray-300">Масштабируемые и безопасные облачные решения для любого бизнеса.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-16 bg-gray-800">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8 text-purple-400">Наши Проекты</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="p-6 bg-gray-700 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-400">Проект 1</h3>
+                        <p class="text-gray-300">Разработано инновационное программное решение для оптимизации операций клиента.</p>
+                    </div>
+                    <div class="p-6 bg-gray-700 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-400">Проект 2</h3>
+                        <p class="text-gray-300">Создана полностью интегрированная облачная платформа для глобального предприятия.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-900">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6 text-purple-400">Свяжитесь с нами</h2>
+                <p class="text-xl mb-12 text-gray-300">Есть идея для проекта? Давайте обсудим ваш следующий большой шаг!</p>
+                <form class="max-w-lg mx-auto space-y-4">
+                    <input type="text" placeholder="Ваше имя" class="w-full p-4 bg-gray-800 text-white border border-gray-600 rounded-lg">
+                    <input type="email" placeholder="Ваш Email" class="w-full p-4 bg-gray-800 text-white border border-gray-600 rounded-lg">
+                    <textarea placeholder="Ваше сообщение" class="w-full p-4 bg-gray-800 text-white border border-gray-600 rounded-lg"></textarea>
+                    <button type="submit" class="bg-purple-700 hover:bg-purple-800 text-white py-3 px-6 rounded-lg font-bold w-full">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">© 2024 FARSOFT. Все права защищены.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-purple-400 mx-2">Политика конфиденциальности</a>
+                <a href="#" class="text-gray-400 hover:text-purple-400 mx-2">Условия использования</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
